@@ -9,7 +9,7 @@ With this problem in mind, [LocalStack](https://github.com/localstack/localstack
 # OBJECTIVES
 This project intends to demonstrate the following three points:
 - create a SNS topic on LocalStack (via command line)
-- publish an event to the SNS topic (via command line)
+- publish an event to a SNS topic (via command line)
 - subscribe an endpoint from a REST application developed in Spring to consume events published in the SNS topic (via command line)
 
 
