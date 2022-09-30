@@ -17,6 +17,7 @@ This project intends to demonstrate the following three points:
 You should have the following technologies installed on your system:
 - [docker-compose](https://docs.docker.com/compose/install/)
 - [localstack](https://github.com/localstack/localstack)
+- [awscli](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
 - [awslocal](https://github.com/localstack/awscli-local)
 - [java 14+](https://www.liquidweb.com/kb/how-to-install-java-windows-ubuntu-macos/)
 - [gradle](https://gradle.org/install/)
