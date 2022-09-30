@@ -3,7 +3,7 @@
 # INTRODUCTION
 When building applications for the cloud, we need to be able to make test through and after the development phase in an environment minimally similar or ideally the same as the production environment where the application will run. We who develop for the AWS not always have an AWS account available in which we can simulate the environment, resources and/or services as we have in corporate projects.
 
-With this problem in mind, [LocalStack](https://github.com/localstack/localstack) was conceived to be a way for testing and simulation for all the major AWS services like DynamoDB, SNS, SQS, Lambda we usually need to the development of applications designed to run in the cloud right from the confort of our local machine, where the application is being developed. LocalStack offers almost the same functionality, with some limitations, and APIs as the AWS cloud environment does.
+With this problem in mind, [LocalStack](https://github.com/localstack/localstack) was conceived to be a way for testing and simulation for the major AWS services, e.g. DynamoDB, SNS, SQS, Lambda, we usually use to compose cloud-native applications right from the confort of our local machine. LocalStack offers almost the same functionality, with some limitations, and APIs as the AWS cloud environment does.
 
 
 # OBJECTIVES
