@@ -3,7 +3,7 @@
 # INTRODUCTION
 When building applications for the cloud, we need to be able to make test through and after the development phase in an environment minimally similar or ideally the same as the production environment where the application will run. We who develop for the AWS not always have an AWS account available in which we can simulate the environment, resources and/or services as we have in corporate projects.
 
-With this problem in mind, [LocalStack](https://github.com/localstack/localstack) was conceived to be a way for testing and simulation for the major AWS services, e.g. DynamoDB, SNS, SQS, Lambda, we usually use to compose cloud-native applications right from the confort of our local machine. LocalStack offers almost the same functionality, with some limitations, and APIs as the AWS cloud environment does.
+With this problem in mind, [LocalStack](https://github.com/localstack/localstack) was conceived to be a fully cloud service emulator for testing and simulation for the major AWS services, e.g. DynamoDB, SNS, SQS, Lambda, we usually use to compose cloud-native applications right from the confort of our local machine. LocalStack offers almost the same functionality, with some limitations, and APIs as the AWS cloud environment does.
 
 
 # OBJECTIVES
@@ -65,3 +65,8 @@ awslocal sns publish --topic-arn $TOPIC_ARN --message '{"firstName": "David", "l
 ```
 From the first terminal in which the application is running, you should get something like the following:
 ![event](./assets/event.jpg)
+
+# FINAL NOTES
+LocalStack is a tool that should definitely be part of our cloud development stack because it is one of the most viable way to explore AWS services and their features in a controlled, customizable and, most importantly, free of charge environment.
+
+Notice that in this project I made use of only one of the many AWS services provided by LocalStack. To check the complete and up-to-date list of all AWS emulated services and their availability, visit this [link](https://docs.localstack.cloud/aws/feature-coverage/).
