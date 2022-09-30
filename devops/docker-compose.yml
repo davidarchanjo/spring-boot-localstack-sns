@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  localstack:    
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    image: localstack/localstack:latest
+    environment: 
+      - DEFAULT_REGION=sa-east-1
+      - EDGE_PORT=4566
+      - SERVICES=s3,logs,sns
+    ports: 
+      - '4566-4583:4566-4583'

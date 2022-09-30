@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "spring-boot-localstack-sns",
+            "request": "launch",
+            "mainClass": "io.davidarchanjo.SpringBootLocalstackSns",
+            "projectName": "spring-boot-localstack-sns"
+        }
+    ]
+}
