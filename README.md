@@ -10,7 +10,7 @@ With this problem in mind, [LocalStack](https://github.com/localstack/localstack
 This project intends to demonstrate the following three points:
 - create a SNS topic on LocalStack (via command line)
 - publish an event to a SNS topic (via command line)
-- subscribe an REST endpoint to consume events published in a SNS topic (via command line)
+- subscribe a REST endpoint to consume events published in a SNS topic (via command line)
 
 
 # PREREQUISITES
