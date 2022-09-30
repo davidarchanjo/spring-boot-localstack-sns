@@ -41,7 +41,7 @@ docker-compose -f ./devops/docker-compose.yml up
 You should get something like on the terminal:
 ![localstack](./assets/localstack.jpg)
 
-## 3. SET ENDPOINT ADDRESS
+## 3. SET THE ENDPOINT ADDRESS
 From the third terminal, run:
 ```bash
 ENDPOINT=http://host.docker.internal:8080
