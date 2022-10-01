@@ -29,13 +29,13 @@ You should have the following technologies installed on your system:
 Open three terminal from the folder you downloaded or cloned the repository and go as follows:
 
 ## 1. LAUNCH THE APPLICATION
-From the first terminal, run:
+From the first terminal, execute:
 ```bash
 ./mvnw spring-boot:run
 ```
 
 ## 2. INITIALIZE LOCALSTACK
-From the second terminal, run:
+From the second terminal, execute:
 ```bash
 docker-compose -f ./devops/docker-compose.yml up
 ```
@@ -43,7 +43,7 @@ You should get something like on the terminal:
 ![localstack](./assets/localstack.jpg)
 
 ## 3. SET THE ENDPOINT ADDRESS
-From the third terminal, run:
+From the third terminal, execute:
 ```bash
 ENDPOINT=http://host.docker.internal:8080
 ```
