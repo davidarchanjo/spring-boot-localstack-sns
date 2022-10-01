@@ -28,13 +28,13 @@ You should have the following technologies installed on your system:
 # TESTING
 Open three terminal from the folder you downloaded or cloned the repository and go as follows:
 
-## 1. START THE APPLICATION
+## 1. LAUNCH THE APPLICATION
 From the first terminal, run:
 ```bash
 ./mvnw spring-boot:run
 ```
 
-## 2. SNIP UP LOCALSTACK
+## 2. INITIALIZE LOCALSTACK
 From the second terminal, run:
 ```bash
 docker-compose -f ./devops/docker-compose.yml up
