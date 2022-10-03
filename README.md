@@ -69,4 +69,4 @@ From the first terminal in which the application is running, you should get some
 # FINAL NOTES
 LocalStack is a tool that should definitely be part of our cloud development stack because it is one of the most viable way to explore AWS services and their features in a controlled, customizable and, most importantly, free of charge environment.
 
-Notice that in this project I made use of only one of the many AWS services provided by LocalStack. To check the complete and up-to-date list of all AWS emulated services and their availability, visit this [link](https://docs.localstack.cloud/aws/feature-coverage/).
+Notice in this project I made use of only one of the many AWS services provided by LocalStack. To check the complete and up-to-date list of all AWS emulated services and their availability, visit this [link](https://docs.localstack.cloud/aws/feature-coverage/).
