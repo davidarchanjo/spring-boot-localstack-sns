@@ -49,17 +49,17 @@ ENDPOINT=http://host.docker.internal:8080
 ```
 **P.S.** In order to be able to connect to services in the host machine from inside a container we should use `host.docker.internal` instead of `localhost` in the endpoint's address.
 
-## 4. CREATE TOPIC
+## 4. CREATE THE TOPIC
 ```bash
 TOPIC_ARN=$(awslocal sns create-topic --name test-topic --output json | jq -r '.TopicArn')
 ```
 
-## 5. SUSBSCRIBE ENDPOINT
+## 5. SUSBSCRIBE THE ENDPOINT
 ```bash
 awslocal sns subscribe --topic-arn $TOPIC_ARN --notification-endpoint $ENDPOINT --protocol http --attributes RawMessageDelivery=true
 ```
 
-## 6. SEND MESSAGE
+## 6. SEND A MESSAGE
 ```bash
 awslocal sns publish --topic-arn $TOPIC_ARN --message '{"firstName": "David", "lastName": "Archanjo"}'
 ```

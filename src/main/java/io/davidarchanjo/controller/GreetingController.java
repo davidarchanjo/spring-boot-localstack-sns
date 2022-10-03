@@ -3,7 +3,6 @@ package io.davidarchanjo.controller;
 import java.util.HashMap;
 
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -25,7 +24,7 @@ public class GreetingController {
 
     @SneakyThrows
     @RequestMapping(consumes = MediaType.TEXT_PLAIN_VALUE)
-    public ResponseEntity<?> processEvent(HttpServletRequest req, HttpServletResponse res) {
+    public ResponseEntity<?> processEvent(HttpServletRequest req) {
         var objectMapper = new ObjectMapper();
         var data = StreamUtils.copyToByteArray(req.getInputStream());
         var payload = objectMapper.readValue(data, new TypeReference<HashMap<String, String>>() {});
